@@ -10,6 +10,9 @@ server.use(
   jsonServer.rewriter({
     "/api/*": "/$1",
     "/users/:resource/:id/show": "/:resource/:id",
+    "/reserve/:resource/:id/show": "/:resource/:id",
+    "/services/:resource/:id/show": "/:resource/:id",
+    "/personels/:resource/:id/show": "/:resource/:id",
   })
 );
 server.use(router);
